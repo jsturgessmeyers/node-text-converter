@@ -3,6 +3,6 @@
   "description": "Converts HTML emails to plain text version.",
   "author": "Adam Brooks",
   "dependencies": {
-    "cheerio": "0.18.x",
+    "cheerio": "0.18.x"
   }
 }

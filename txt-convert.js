@@ -1,5 +1,7 @@
 var fs = require('fs');
+var path = require('path');
 var cheerio = require('cheerio');
+var HTML = process.argv[2];
 
 (function parseEmail(filePath) {
   var data = fs.readFileSync(filePath);
@@ -66,6 +68,6 @@ var cheerio = require('cheerio');
     buildSections(section);
   }
 
-  fs.writeFileSync("/Users/adambrooks/Desktop/text.txt", lines.join("\n"));
+  fs.writeFileSync("/Users/adambrooks/Desktop/" + path.basename(HTML), lines.join("\n"));
   console.log('File saved successfully.');
-})(process.argv[2]);
+})(HTML);
