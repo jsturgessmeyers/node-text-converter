@@ -3,7 +3,7 @@ var app = express();
 var converter = require('./converter');
 
 app.get('/', function (request, response) {
-  response.send(converter.getText(process.argv[2]));
+  response.send(converter.parseEmail(process.argv[2]));
 });
 
 var server = app.listen(8080, function () {
