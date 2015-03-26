@@ -2,6 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var cheerio = require('cheerio');
 var HTML = process.argv[2];
+var fileName = path.basename(HTML); // need to strip file extension
 
 (function parseEmail(filePath) {
   var data = fs.readFileSync(filePath);
@@ -68,6 +69,6 @@ var HTML = process.argv[2];
     buildSections(section);
   }
 
-  fs.writeFileSync("/Users/adambrooks/Desktop/" + path.basename(HTML), lines.join("\n"));
+  fs.writeFileSync("/Users/adambrooks/Desktop/" + fileName + '.txt', lines.join("\n"));
   console.log('File saved successfully.');
 })(HTML);
