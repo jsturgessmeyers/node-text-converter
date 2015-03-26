@@ -2,7 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var cheerio = require('cheerio');
 var HTML = process.argv[2];
-var fileName = path.basename(HTML); // need to strip file extension
+var fileName = path.basename(HTML).replace(/\.[^/.]+$/, '');
 
 (function parseEmail(filePath) {
   var data = fs.readFileSync(filePath);
