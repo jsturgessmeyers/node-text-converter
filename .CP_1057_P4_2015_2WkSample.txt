@@ -1,0 +1,26 @@
+View in your browser
+>> %%view_email_url%%
+
+Try the Courier-Post for 14 days - it's on us!
+
+Try the Courier-Post.  Get 14 days of a free, no-risk sample.
+
+************************
+
+
+Subscribe Now
+>> http://offers.courierpostonline.com/YXX?gps-source=EXEMLCP&utm_medium=email&utm_source=exacttarget&utm_campaign=cp1057
+
+************************
+Sign up today! To sign up by phone, please call 1‑800‑677‑6289 and reference promo code Y-XX.
+
+
+*Offer expires %%=Format(DateAdd(Now(), "30","D"), "MM/dd/yyyy")=%%.  Certain restrictions apply.  For complete details, visit HERE or call 1-800-677-6289 and ask about offer Y-XX.
+
+------------------------
+You are currently subscribed as: %%emailaddr%%. To unsubscribe from future circulation promotions from%%Member_Busname%%, visit the following web page.
+>> http://pages.exacttarget.com/unsubscribePage?MID=%%memberid%%&ListID=%%listId%%&SubscriberID=%%subscriberID%%&ji=%%jobid%%&sk=%%_subscriberKey%%
+
+
+%%Member_Addr%% | %%Member_City%%, %%Member_State%% | %%Member_PostalCode%% | %%Member_Country%%(c) %%Member_Busname%%
+
