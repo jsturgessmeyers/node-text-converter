@@ -34,7 +34,7 @@ var fileName = path.basename(HTML).replace(path.extname(HTML), '');
   // Second adds a space to ends of sentences if necessary
   // Remaining replace entities
   function cleanText(text) {
-    if (/\S/g.test(text) && text != undefined) {
+    if (/\S/g.test(text) && text !== undefined) {
       return text.replace(/[\s\t]{2}/g, '')
       .replace(/[.](?=.)/g, '. ')
       .replace(/—/g, '--')
