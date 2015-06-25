@@ -12,7 +12,7 @@ var fileName = path.basename(HTML).replace(path.extname(HTML), '');
   // Vars for links--shouldn't need to change
   var header = cleanText($('#hdr-img').attr('alt'));
 
-  var body = $('#bodySection').text().split('\n');
+  var body = $('#body-section').text().split('\n');
   for (var i = body.length - 1; i >= 0; i--) {
     if (!/\S/g.test(body[i])) {
       body.splice(i, 1);
@@ -23,7 +23,7 @@ var fileName = path.basename(HTML).replace(path.extname(HTML), '');
 
   var btnText = cleanText($('#btn').text());
   var promoURL = '>> ' + $('a[name="promo"]').attr('href');
-  var footer = cleanText($('#footerSection').text());
+  var footer = cleanText($('#footer-section').text());
   var disclosure = cleanText($('.disclosure').text());
   var unsub = cleanText($('.unsub').text());
   var unsubURL = '>> ' + $('a[name="unsub"]').attr('href');
